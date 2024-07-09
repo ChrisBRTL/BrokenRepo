@@ -350,7 +350,7 @@ h6 {
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
-  background: #281f1f;
+  background: #161616;
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
@@ -368,7 +368,7 @@ h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #2c4964;
+  color: #e4e5e7;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
@@ -377,7 +377,7 @@ h6 {
 .mobile-nav a:hover,
 .mobile-nav .active > a,
 .mobile-nav li:hover > a {
-  color: #5846f9;
+  color: #099df9;
   text-decoration: none;
 }
 
@@ -1675,6 +1675,12 @@ section {
   border-radius: 5px;
   text-align: left;
   border: 1px solid white;
+}
+
+.footer-newsletter .top-newsletter {
+
+  min-width: 100%;
+
 }
 
 #footer .footer-newsletter form input[type='email'], .top-newsletter input[type='input'] {

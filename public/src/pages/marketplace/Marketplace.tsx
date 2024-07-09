@@ -105,7 +105,7 @@ export const Marketplace: FC<Props> = (props: Props) => {
          {/*
           for the XSS attacked subscrbe newsletter
           */}
-            <div className="col-lg-4 col-md-6 footer-newsletter">
+            <div className="col-lg-4 col-md-6 footer-newsletter top-newsletter mb-5">
               <h4>Join Our Newsletter</h4>
               <p>
                 Join us for news and alerts!
