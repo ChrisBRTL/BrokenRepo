@@ -27,8 +27,8 @@ export const Header: FC<Props> = (props: Props) => {
         <div className="row justify-content-center">
           <div className="col-xl-9 d-flex align-items-center">
             <Link to="/" className="logo mr-auto" onClick={sendGoTo('/')}>
-              <img src="assets/img/logo.png" alt="" className="img-fluid" />{' '}
-              BROKEN CRYSTALS
+              <img src="" alt="" className="img-fluid" />{' '}
+              Deliberatus
             </Link>
 
             <Nav />

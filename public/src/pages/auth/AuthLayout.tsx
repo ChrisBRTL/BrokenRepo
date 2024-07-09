@@ -27,7 +27,7 @@ export const AuthLayout: FC<Props> = ({ children, logoBgColor }: Props) => {
                   className="img-fluid"
                   ref={logoRef}
                 />
-                BROKEN CRYSTALS
+                Deliberatus
               </a>
             </div>
             {children}

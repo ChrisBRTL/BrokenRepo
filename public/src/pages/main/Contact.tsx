@@ -28,7 +28,7 @@ export const Contact = (props: { mapTitle: string | null }) => {
             <div className="info-box mb-4">
               <i className="bx bx-map" />
               <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>59808 Rue de Strassen, 2532 Maerel, Luxembourg</p>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export const Contact = (props: { mapTitle: string | null }) => {
             <div className="info-box  mb-4">
               <i className="bx bx-envelope" />
               <h3>Email Us</h3>
-              <p>contact@example.com</p>
+              <p>contact@ltrrtlltrrtl.com</p>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ export const Contact = (props: { mapTitle: string | null }) => {
             <div className="info-box  mb-4">
               <i className="bx bx-phone-call" />
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <p>+352 923 00299 221 3211</p>
             </div>
           </div>
         </div>

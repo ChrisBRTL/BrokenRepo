@@ -33,7 +33,7 @@ services:
         condition: on-failure
       resources:
         limits:
-          cpus: 3.5
+          cpus: '3.5'
     logging:
       options:
         max-file: '5'

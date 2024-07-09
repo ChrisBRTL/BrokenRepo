@@ -96,7 +96,7 @@ export const Footer: FC = () => {
                   className="img-fluid"
                 />
               </Link>
-              <h3>BROKEN CRYSTALS</h3>
+              <h3>Deliberatus</h3>
 
               <div>
                 A108 Adam Street <br />
@@ -165,7 +165,7 @@ export const Footer: FC = () => {
             <div className="copyright">
               &copy; Copyright{' '}
               <strong>
-                <span>Broken Crystals</span>
+                <span>Deliberatus</span>
               </strong>
               . All Rights Reserved
             </div>

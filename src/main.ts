@@ -56,14 +56,10 @@ async function bootstrap() {
   });
 
   const options = new DocumentBuilder()
-    .setTitle('Broken Crystals')
+    .setTitle('Deliberatus')
     .setDescription(
       `
   ![BC logo](/assets/img/logo_blue_small.png)
-
-  This is the _Broken Crystals_ REST API.
-
-  _Broken Crystals_ is a benchmark application that uses modern technologies and implements a set of common security vulnerabilities.
 
   ## Available endpoints
 

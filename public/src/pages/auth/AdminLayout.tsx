@@ -15,7 +15,7 @@ export const AdminLayout: FC = ({ children }) => {
                   alt=""
                   className="img-fluid"
                 />
-                BROKEN CRYSTALS
+                Deliberatus
               </a>
             </div>
             {children}

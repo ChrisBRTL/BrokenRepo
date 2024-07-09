@@ -6,14 +6,14 @@ export const Hero: FC = () => {
       <div className="container-fluid" data-aos="fade-up">
         <div className="row justify-content-center">
           <div className="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1>Your Vulnerable Crystal Marketplace</h1>
-            <h2>Find the most beautiful stones in one place!</h2>
+            <h1>Your Marketplace for goods with the highest quality</h1>
+            <h2>Only High Quality products!</h2>
             <div>
               <a
                 href="#marketplacePreview"
                 className="btn-get-started scrollto"
               >
-                Get Started
+                Click to get started
               </a>
             </div>
           </div>
@@ -23,7 +23,7 @@ export const Hero: FC = () => {
             data-aos-delay="150"
           >
             <img
-              src="assets/img/hero-img.png"
+              src=""
               className="img-fluid animated"
               alt=""
             />
