@@ -1,15 +1,20 @@
-import React, { ChangeEvent, FC, useEffect, useState } from 'react';
+import React, { ChangeEvent, FC, FormEvent, useEffect, useState } from 'react';
 import { Product } from '../../interfaces/Product';
 import {
   getProducts,
   getLatestProducts,
   putFile,
-  getFile
+  getFile, 
+  postSubscriptions
 } from '../../api/httpClient';
 import Header from '../main/Header/Header';
 import Testimonials from './Testimonials/Testimonials';
 import ProductView from './ProductView';
 import Partners from './Partners/Partners';
+import InnerHTML from 'dangerously-set-html-content';
+
+
+
 
 interface Props {
   preview: boolean;
@@ -26,6 +31,29 @@ export const Marketplace: FC<Props> = (props: Props) => {
   const [products, setProducts] = useState<Array<Product>>([]);
   const [sendFileResult, setSendFileResult] = useState<string>('');
   const [fileName, setFileName] = useState<string>('');
+
+
+  const [subscriptions, setSubscriptions] = useState<string>('');
+  const [subscriptionsResponse, setSubscriptionsResponse] = useState<any>();
+
+
+  const sendSubscription = (e: FormEvent) => {
+    e.preventDefault();
+
+    postSubscriptions(subscriptions).then((data) =>
+      setSubscriptionsResponse(data)
+    );
+  };
+
+
+ {/* This is for the subscribe event, handling the input value. Vulnerbale to Xss attack 
+  
+  */}
+  const onInput = ({ target }: { target: EventTarget | null }) => {
+    const { value } = target as HTMLInputElement;
+    setSubscriptions(value);
+  };
+
 
   const sendFile = (e: ChangeEvent<HTMLInputElement>) => {
     const file: File = (e.target.files as FileList)[0];
@@ -73,6 +101,32 @@ export const Marketplace: FC<Props> = (props: Props) => {
 
       <section id="marketplace" className="portfolio">
         <div className="container" data-aos="fade-up">
+
+         {/*
+          for the XSS attacked subscrbe newsletter
+          */}
+            <div className="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Join Our Newsletter</h4>
+              <p>
+                Join us for news and alerts!
+              </p>
+              <form onSubmit={sendSubscription}>
+                <input
+                  type="input"
+                  name="input"
+                  value={subscriptions}
+                  onInput={onInput}
+                />
+                <input type="submit" value="Subscribe" />
+              </form>
+              {subscriptionsResponse && (
+                <div className="dangerous-html">
+                  <InnerHTML html={subscriptionsResponse + ' subscribed.'} />
+                </div>
+              )}
+            </div>
+                  
+
           <div className="section-title marketplaceTitle">
             <h2>Marketplace</h2>
           </div>
@@ -112,6 +166,7 @@ export const Marketplace: FC<Props> = (props: Props) => {
           <div className="section-title">
             <h2>feedback</h2>
             <span>Please, upload a feedback: </span>
+            <span>Supported files: PDF, PNG, JPEG</span>
             <label htmlFor="feedback-file-input" className="file-input-label">
               <img
                 src={'assets/img/upload-file.svg'}

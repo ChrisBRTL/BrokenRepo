@@ -29,9 +29,8 @@ export const Footer: FC = () => {
   };
 
   const usefulLinks = [
-    { name: 'Home', url: '/', icon: 'bx-chevron-right' },
     { name: 'About us', url: '/', icon: 'bx-chevron-right' },
-    { name: 'Services', url: '/', icon: 'bx-chevron-right' },
+    
     {
       name: 'Terms of service',
       url: '/api/goto?url=http://google.com',
@@ -39,21 +38,18 @@ export const Footer: FC = () => {
     },
     {
       name: 'Privacy policy',
-      url: 'https://takemeover-bright.s3.amazonaws.com/privacy-policy.pdf',
+      url: 'https://google.com',
       icon: 'bx-chevron-right'
     }
   ];
 
   const services = [
-    { name: 'Web Design', url: '/', icon: 'bx-chevron-right' },
-    { name: 'Web Development', url: '/', icon: 'bx-chevron-right' },
-    { name: 'Product Management', url: '/', icon: 'bx-chevron-right' },
-    { name: 'Marketing', url: '/', icon: 'bx-chevron-right' },
-    { name: 'Graphic Design', url: '/', icon: 'bx-chevron-right' }
+    { name: 'Consulting', url: '/', icon: 'bx-chevron-right' },
+    { name: 'Lorem Ipsum', url: '/', icon: 'bx-chevron-right' }
   ];
 
   const footerLinkSections = [
-    { title: 'Useful Links', items: usefulLinks },
+    { title: 'Links', items: usefulLinks },
     { title: 'Our Services', items: services }
   ];
 
@@ -88,21 +84,21 @@ export const Footer: FC = () => {
           <div className="row">
             <div className="col-lg-3 col-md-6 footer-contact">
               <Link to="/" className="logo mr-auto">
-                <img
+               {/*<img
                   width={100}
                   height={100}
-                  src="assets/img/logo.png"
+                  src=""
                   alt=""
                   className="img-fluid"
-                />
+                />*/}
               </Link>
               <h3>Deliberatus</h3>
 
               <div>
-                A108 Adam Street <br />
-                New York, NY 535022
+                Rue de Strassen <br />
+                Maellern, 453123 
                 <br />
-                United States <br />
+                Luxembourg <br />
                 <br />
                 <strong>Phone:</strong>{' '}
                 {phone && (
@@ -111,9 +107,11 @@ export const Footer: FC = () => {
                   </span>
                 )}
                 <br />
-                <strong>Email:</strong> info@example.com
+                <strong>Email:</strong> deliberatus@deliberatus.com
                 <br />
-                <a href="/api/secrets">🤫</a>
+                <a href="/api/secrets">
+                <button>BB</button>
+                </a>
               </div>
             </div>
 
@@ -137,8 +135,7 @@ export const Footer: FC = () => {
             <div className="col-lg-4 col-md-6 footer-newsletter">
               <h4>Join Our Newsletter</h4>
               <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
+                Join us for news and alerts!
               </p>
               <form onSubmit={sendSubscription}>
                 <input
@@ -162,18 +159,18 @@ export const Footer: FC = () => {
       <div className="container">
         <div className="copyright-wrap d-md-flex py-4">
           <div className="mr-md-auto text-center text-md-left">
-            <div className="copyright">
+            {/*<div className="copyright">
               &copy; Copyright{' '}
               <strong>
                 <span>Deliberatus</span>
               </strong>
               . All Rights Reserved
-            </div>
+            </div>*/}
             <span className="dangerous-html">
               <InnerHTML html={decodeURIComponent(window.location.search)} />
             </span>
           </div>
-          <table>
+          {/*<table>
             <tbody>
               {socialSections.map((section, idx) => (
                 <tr key={`social-section-${idx}`}>
@@ -190,7 +187,7 @@ export const Footer: FC = () => {
                 </tr>
               ))}
             </tbody>
-          </table>
+          </table>*/}
         </div>
       </div>
     </footer>

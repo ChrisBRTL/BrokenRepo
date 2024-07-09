@@ -26,28 +26,6 @@ const menu: Array<MenuItem> = [
       { name: 'Adminpage', path: RoutePath.Adminpage, newTab: false },
       { name: 'Dashboard', path: RoutePath.Dashboard, newTab: false }
     ]
-  },
-  {
-    name: 'API Schema',
-    path: '',
-    newTab: false,
-    subItems: [
-      {
-        name: 'OpenAPI 3.0 JSON',
-        path: '/swagger-json',
-        newTab: true
-      },
-      {
-        name: 'API Reference',
-        path: '/swagger',
-        newTab: true
-      },
-      {
-        name: 'GraphiQL',
-        path: '/graphiql',
-        newTab: true
-      }
-    ]
   }
 ];
 

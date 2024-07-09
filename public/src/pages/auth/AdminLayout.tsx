@@ -8,13 +8,13 @@ export const AdminLayout: FC = ({ children }) => {
           <div className="admin-content">
             <div className="admin-logo">
               <a href="/" className="logo mr-auto">
-                <img
+                {/*<img
                   width={100}
                   height={100}
-                  src="assets/img/logo_blue.png"
+                  src=""
                   alt=""
                   className="img-fluid"
-                />
+                />*/}
                 Deliberatus
               </a>
             </div>

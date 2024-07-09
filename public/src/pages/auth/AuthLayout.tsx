@@ -19,15 +19,15 @@ export const AuthLayout: FC<Props> = ({ children, logoBgColor }: Props) => {
           <div className="login-content">
             <div className="login-logo">
               <a href="/" className="logo mr-auto">
-                <img
+                {/*<img
                   width={100}
                   height={100}
-                  src="assets/img/logo_blue.png"
+                  src=""
                   alt="logo"
                   className="img-fluid"
                   ref={logoRef}
-                />
-                Deliberatus
+                />*/}
+                LOGIN into Deliberatus
               </a>
             </div>
             {children}

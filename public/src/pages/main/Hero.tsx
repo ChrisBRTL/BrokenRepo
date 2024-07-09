@@ -6,8 +6,8 @@ export const Hero: FC = () => {
       <div className="container-fluid" data-aos="fade-up">
         <div className="row justify-content-center">
           <div className="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1>Your Marketplace for goods with the highest quality</h1>
-            <h2>Only High Quality products!</h2>
+            <h1>Your Marketplace for products with the highest quality</h1>
+            <h2>Exclusively High Quality products!</h2>
             <div>
               <a
                 href="#marketplacePreview"
