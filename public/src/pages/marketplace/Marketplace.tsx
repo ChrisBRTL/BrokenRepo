@@ -104,7 +104,7 @@ export const Marketplace: FC<Props> = (props: Props) => {
          {/*
           for the XSS attacked subscrbe newsletter
           */}
-            <div className="col-lg-4 col-md-6 footer-newsletter">
+            <div className="col-lg-4 col-md-6 footer-newsletter mb-5 top-newsletter-xss">
               <h4>Join Our Newsletter</h4>
               <p>
                 Join us for news and alerts!
@@ -163,19 +163,21 @@ export const Marketplace: FC<Props> = (props: Props) => {
       <section id="feedback" className="testimonials section-bg">
         <div className="container" data-aos="fade-up">
           <div className="section-title">
-            <h2>feedback</h2>
+            <h2>Upload Files</h2>
             <span>Please, upload a feedback: </span>
             <span>Supported files: PDF, PNG, JPEG</span>
             <label htmlFor="feedback-file-input" className="file-input-label">
-              <img
-                src={'assets/img/upload-file.svg'}
-                alt=""
-                className="upload-file-image"
-              />
+              
             </label>
+
+          
+            <button
+                className="upload-file-button"
+              >Upload files here.</button>
             <input
               id="feedback-file-input"
               type="file"
+              className= "file-input-hidden-button"
               accept="file/*"
               style={{ display: 'none' }}
               onChange={sendFile}
@@ -184,9 +186,9 @@ export const Marketplace: FC<Props> = (props: Props) => {
               <>
                 <div className="warning-text">{sendFileResult}</div>
                 <div>
-                  You can reach your file{' '}
+                  
                   <a href="#" onClick={onGetFile}>
-                    here
+                  Find you file
                   </a>
                 </div>
               </>

@@ -1420,6 +1420,13 @@ section {
   border-radius: 5px;
 }
 
+
+button.au-btn.au-btn--block.au-btn--green.m-b-20, .login-form button.au-btn.au-btn--block.m-b-20 {
+  
+ 
+  background: #007cff;
+}
+
 .contact .php-email-form button[type='submit']:hover {
   background: #0c0c0c;
 }
@@ -1769,6 +1776,8 @@ section {
   width: 40px;
   height: 40px;
 }
+
+
 
 .upload-file-image {
   border-radius: 5%;

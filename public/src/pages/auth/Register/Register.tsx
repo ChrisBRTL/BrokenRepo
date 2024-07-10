@@ -70,7 +70,7 @@ export const Register: FC = () => {
 
       <div>
       <p>
-            Already have an account? <Link to={RoutePath.Login}>Sign In</Link>
+            Already have an account? <Link to={RoutePath.Login}></Link>
             <button
             className="au-btn au-btn--block au-btn--green m-b-20"
             type="submit"
@@ -195,16 +195,7 @@ export const Register: FC = () => {
         </form>
 
         <div className="register-link">
-          {/*<p>
-            Already have an account? <Link to={RoutePath.Login}>Sign In</Link>
-            <button
-            className="au-btn au-btn--block au-btn--green m-b-20"
-            type="submit"
-            disabled={submitBtnDisabled}
-          >
-            SIGN IN
-          </button>
-          </p>*/}
+         
         </div>
       </div>
     </AuthLayout>
