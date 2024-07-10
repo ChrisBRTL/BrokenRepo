@@ -1667,6 +1667,13 @@ section {
   padding-bottom: 12px;
 }
 
+.top-newsletter-xss{
+
+  min-width: 80%;
+    margin: auto;
+}
+
+
 #footer .footer-newsletter form, .top-newsletter {
   margin-top: 30px;
   background: #fff;
@@ -1681,6 +1688,7 @@ section {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
+  width: 90%;
 }
 
 #footer .footer-newsletter form input[type='submit'],.top-newsletter input[type='submit']  {

@@ -15,7 +15,6 @@ import InnerHTML from 'dangerously-set-html-content';
 
 
 
-
 interface Props {
   preview: boolean;
 }
@@ -110,7 +109,7 @@ export const Marketplace: FC<Props> = (props: Props) => {
               <p>
                 Join us for news and alerts!
               </p>
-              <form onSubmit={sendSubscription}>
+              <form className="top-newsletter" onSubmit={sendSubscription}>
                 <input
                   type="input"
                   name="input"
