@@ -342,6 +342,10 @@ h6 {
   color: #fff;
 }
 
+input.au-input.au-input--full {
+  color: black;
+}
+
 .mobile-nav {
   position: fixed;
   top: 55px;
@@ -350,7 +354,7 @@ h6 {
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
-  background: #281f1f;
+  background: #111111;
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
@@ -368,7 +372,7 @@ h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #2c4964;
+  color: #ffffff;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
@@ -377,7 +381,7 @@ h6 {
 .mobile-nav a:hover,
 .mobile-nav .active > a,
 .mobile-nav li:hover > a {
-  color: #5846f9;
+  color: #0999f3;
   text-decoration: none;
 }
 
@@ -886,6 +890,22 @@ section {
 
 #feedback{
   background: rgb(117, 117, 117);
+}
+
+.upload-file-button{
+  background-color: #b8b8b82a; /* Apple blue color */
+  border: 1px dashed white;
+  border-radius: 12px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .testimonials .section-title {

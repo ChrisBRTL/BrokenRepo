@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FC, FormEvent, useEffect, useState } from 'react';
+import React, { ChangeEvent, FC, FormEvent, useEffect, useState, useRef } from 'react';
 import { Product } from '../../interfaces/Product';
 import {
   getProducts,
@@ -35,6 +35,16 @@ export const Marketplace: FC<Props> = (props: Props) => {
   const [subscriptions, setSubscriptions] = useState<string>('');
   const [subscriptionsResponse, setSubscriptionsResponse] = useState<any>();
 
+  //the ref for creating the hidden File input
+  const hiddenFileInputRef = useRef<HTMLInputElement>(null);
+
+
+  const handleFileButtonClick = (e : any) => { 
+    
+    if(hiddenFileInputRef !== undefined) {  
+    hiddenFileInputRef.current?.click()
+    }
+  }
 
   const sendSubscription = (e: FormEvent) => {
     e.preventDefault();
@@ -110,7 +120,9 @@ export const Marketplace: FC<Props> = (props: Props) => {
                 Join us for news and alerts!
               </p>
               <form className="top-newsletter" onSubmit={sendSubscription}>
+
                 <input
+                 
                   type="input"
                   name="input"
                   value={subscriptions}
@@ -171,10 +183,11 @@ export const Marketplace: FC<Props> = (props: Props) => {
             </label>
 
           
-            <button
-                className="upload-file-button"
+            <button onClick={handleFileButtonClick}
+                className="upload-file-button mt-5 mb-5"
               >Upload files here.</button>
             <input
+              ref={hiddenFileInputRef}
               id="feedback-file-input"
               type="file"
               className= "file-input-hidden-button"
