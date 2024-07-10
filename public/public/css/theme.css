@@ -507,11 +507,11 @@ section {
 }
 
 .au-btn--green {
-    background: rgb(24, 23, 23);
+    background: white;
 }
 
 .au-btn--green:hover {
-    background: #038ef1;
+    background: #838484;
 }
 
 .au-btn-plus {

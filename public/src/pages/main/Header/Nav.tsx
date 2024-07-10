@@ -16,7 +16,7 @@ const menu: Array<MenuItem> = [
     path: '/marketplace?videosrc=https://www.youtube-nocookie.com/embed/MPYlxeG-8_w?controls=0',
     newTab: false
   },
-  { name: 'Access user data', path: RoutePath.Userprofile, newTab: false },
+  { name: 'Edit user data', path: RoutePath.Userprofile, newTab: false },
   {
     name: 'Adminmenu',
     path: '',
