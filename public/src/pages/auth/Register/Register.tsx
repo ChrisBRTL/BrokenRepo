@@ -94,9 +94,9 @@ export const Register: FC = () => {
               <option value={LoginFormMode.BASIC}>
                 Simple REST-based Registration
               </option>
-              <option value={LoginFormMode.OIDC}>
+              {/*<option value={LoginFormMode.OIDC}>
                 Simple OIDC-based Registration
-              </option>
+              </option>*/}
             </select>
           </div>
           <div className="form-group">
