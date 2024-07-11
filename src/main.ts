@@ -32,6 +32,9 @@ async function bootstrap() {
     },
   );
 
+
+  //httpOnly: we can change to true, if we want to restric simple missbehaviour by setting the cookies by the client
+
   await server.register(fastifyCookie);
   await server.register(fmp);
   await server.register(session, {

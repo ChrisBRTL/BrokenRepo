@@ -1,0 +1,3 @@
+Linux System user with sudo privileges:
+User: azureuser
+passwords: helloworld    
